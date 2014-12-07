@@ -1,0 +1,17 @@
+name: MoneyPlugin
+main: com.github.sniper1127.MoneyPlugin.Main
+version: 1.0.0
+commands:
+    MoneyPlugin:
+      description: MoneyPluginのコマンド一覧
+      aliases: mp
+      usage: |
+           /<command> set <Name> - お金の単位をNameに変更します。
+           /<command> slot <none/list/side/below> - お金の表示場所を変更します。
+           /<command> add <PlayerName> <Money> - Playerのお金をMoney分増やします。(負数で減らすことが出来る)
+      permission: MoneyPlugin.command
+      permission-message: パーミッション "<permission>" が無いため、実行できません。
+permissions:
+    MoneyPlugin.command:
+      description: MoneyPluginコマンドの使用権限
+      default: op
